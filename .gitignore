@@ -1,0 +1,5 @@
+/vendor/
+.env
+.ac-php-conf.json
+/cache/
+.idea/

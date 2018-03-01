@@ -1,0 +1,22 @@
+{
+    "name": "fidding/fidding-php",
+    "authors": [
+        {
+            "name": "洪加煌",
+            "email": "fidding@soundbus.cn"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^2.4",
+        "illuminate/routing": "^5.5",
+        "illuminate/events": "^5.5",
+        "illuminate/database": "^5.5",
+        "illuminate/view": "^5.5",
+        "filp/whoops": "^2.1"
+    }
+}
