@@ -3,7 +3,6 @@ namespace App\Controllers;
 
 use App\Models\Users;
 use Illuminate\Container\Container;
-use Core\View as View;
 
 class WelcomeController
 {
@@ -12,8 +11,10 @@ class WelcomeController
         $student = Users::first();
         $data = $student->getAttributes();
 
-        $view = new View();
-        return $view->make('test')
+        \Redis::set('a', '123');
+        $a = \Redis::get('a');
+        \Redis::delete('a');
+        return \View::make('test')
             ->with('data', $data)
             ->with('test', 'test');
 

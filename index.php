@@ -23,11 +23,11 @@ $manager->addConnection(require './config/database.php');
 $manager->bootEloquent();
 
 // 加载view
-$app->instance('config', new Fluent);
-$app['config']['view.compiled'] = __DIR__.'/cache/views/';
-$app['config']['view.paths'] = [__DIR__.'/resources/views/'];
-with(new Illuminate\View\ViewServiceProvider($app))->register();
-with(new Illuminate\Filesystem\FilesystemServiceProvider($app))->register();
+// $app->instance('config', new Fluent);
+// $app['config']['view.compiled'] = __DIR__.'/cache/views/';
+// $app['config']['view.paths'] = [__DIR__.'/resources/views/'];
+// with(new Illuminate\View\ViewServiceProvider($app))->register();
+// with(new Illuminate\Filesystem\FilesystemServiceProvider($app))->register();
 
 // whoops错误提示
 $whoops = new \Whoops\Run;

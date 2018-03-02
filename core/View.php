@@ -1,11 +1,9 @@
 <?php
-namespace Core;
 
 class View {
 
     protected $view;
     protected $data;
-    protected $engine;
 
     public function __construct($view = null)
     {

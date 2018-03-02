@@ -8,8 +8,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "App\\": "app/",
-            "Core\\": "core/"
+            "App\\": "app/"
         },
         "classmap": [
             "core"
@@ -21,6 +20,7 @@
         "illuminate/events": "^5.5",
         "illuminate/database": "^5.5",
         "illuminate/view": "^5.5",
-        "filp/whoops": "^2.1"
+        "filp/whoops": "^2.1",
+        "predis/predis": "^1.1"
     }
 }
