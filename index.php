@@ -2,6 +2,7 @@
 use Illuminate\Database\Capsule\Manager;
 use Illuminate\Support\Fluent;
 
+define('ROOT', __DIR__);
 require __DIR__.'/vendor/autoload.php';
 
 // 配置模块加载
